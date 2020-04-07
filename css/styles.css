@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
-img{
+.otherimg{
+  width: 30px;
+  height: 30px;
+}
+
+.header_img{
   max-width: 100%;
   display: block;
 }
@@ -12,6 +17,8 @@ img{
 .page {
   display: flex;
   flex-wrap: wrap;
+  background-color: #FFE6C7;
+  height: 100%
 }
 
 .frontquote{
@@ -19,6 +26,10 @@ img{
   color: black;
   text-align: center;
   vertical-align: top;
+}
+
+#historyimg{
+  padding: 30px;
 }
 
 .intro{
@@ -53,7 +64,6 @@ html {margin-bottom: 55px}
 
 .header {
   height: 400px;
-  background-color: #B2D6FF;
   overflow: hidden;
 }
 
@@ -70,16 +80,21 @@ html {margin-bottom: 55px}
 .feature-1 {
   background-color: #FCCF65;
   border: 2px #FFE6C7 solid;
+  border-radius: 10px;
 }
 
 .feature-2 {
   background-color: #B7BDC4;
   border: 2px #FFE6C7 solid;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .feature-3 {
   background-color: #FF765E;
   border: 2px #FFE6C7 solid;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .avatar {
@@ -97,10 +112,21 @@ html {margin-bottom: 55px}
   margin-top: 30px;
 }
 
+
 .comment {
   margin: 10px;
   margin: 20px;
+  font-size: .91vw;
   overflow: hidden;  /* This is important */
+  flex: 1;
+}
+
+.pagecomment {
+  margin: 10px;
+  margin: 20px;
+  overflow: hidden;  /* This is important */
+  flex: 2;
+  min-width: 20%;
 }
 
 /* Mobile Styles */
@@ -117,6 +143,9 @@ html {margin-bottom: 55px}
   .feature-2,
   .feature-3 {
     width: 50%;
+  }
+  .comment{
+    font-size: 1.6vw;
   }
 }
 
