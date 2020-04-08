@@ -22,10 +22,10 @@
             <a class="nav-link" href="history.html">Our History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Donate Now!</a>
+            <a class="nav-link" href="donate.html">Donate Now!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="charitysearch.html">Search a Charity</a>
+            <a class="nav-link" href="#">Search a Charity</a>
           </li>
         </ul>
       </div>
@@ -33,15 +33,24 @@
 
     <div class="page">
       <div class="section">
+        <h1>Charity Search Function</h1>
+
+        <p>This app uses the <a href="https://www.charitynavigator.org/">Charity Navigator API</a> to get information about a specific charity.</p>
+        <form class="pure-form>" <fieldset>
+          <legend>Enter the charity name and state in the spaces below:</legend>
+          <input placeholder="Name" id="name">
+          <input placeholder="State" id="state">
+          <p></p>
+          <button id="search" class="pure-button pure-button-primary">Search</button>
+          </fieldset>
+        </form>
 
       </div>
-      <div class="section">
-        <img src="../images/error.jpg" alt="error!" class="otherimg">
-        Whoops! This page is currently under construction. Come back when it's time for Creative Project 2!
+      <div class="content">
+        <p id="result"></p>
       </div>
-      <div class="section">
-
-      </div>
+      <script text="type/javascript" src="../js/charityAPI.js">
+      </script>
     </div>
 
     <!-- bottom menu with GitHub and language options  -->
