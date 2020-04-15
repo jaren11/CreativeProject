@@ -121,6 +121,11 @@ html {margin-bottom: 55px}
   border: 3px white solid;
 }
 
+.avatar img{
+  width: 60px;
+  height: 60px;
+}
+
 .username {
   margin-top: 30px;
 }
