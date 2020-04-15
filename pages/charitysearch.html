@@ -6,6 +6,7 @@
     <meta charset='UTF-8'/>
     <title>Creative Project 1 - Donate Now!</title>
     <link rel='stylesheet' href='../css/styles.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
 
@@ -32,21 +33,27 @@
     </nav>
 
     <div class="page">
-      <div class="section">
-        <h1>Charity Search Function</h1>
-
-        <p>This app uses the <a href="https://www.charitynavigator.org/">Charity Navigator API</a> to get information about a specific charity.</p>
-        <form class="pure-form>" <fieldset>
-          <legend>Enter the charity name and state in the spaces below:</legend>
+      <div class="comment">
+        <h1>Welcome to the Charity Search Function</h1>
+        <p>As the days go by, the number of charities gets bigger and bigger. We set out to find a way to lok at whatever charity you want from our long (1.6 million, to be exact) list of affiliates. Thanks for stoppping by!    We use this application to search other charities that are, of course, 100% inferior to us but we enjoy looking at them anyways. Enjoy the service :)</p>
+      </div>
+      <div class="section2 feature-3">
+        <p class="comment">This app uses the <a href="https://www.charitynavigator.org/" target="_blank" rel="noopener">Charity Navigator API</a> to get information about a specific charity.</p>
+        <form class="pure-form comment " <fieldset>
+          <legend>Enter the charity name, state, and desired sort in the spaces below:</legend>
           <input placeholder="Name" id="name">
           <input placeholder="State" id="state">
+          <select id="sort">
+            <option value="RELEVANCE">Relevance</option>
+            <option value="NAME">Name</option>
+            <option value="RATING">Date</option>
+          </select>
           <p></p>
           <button id="search" class="pure-button pure-button-primary">Search</button>
           </fieldset>
         </form>
-
       </div>
-      <div class="content">
+      <div class="results">
         <p id="result"></p>
       </div>
       <script text="type/javascript" src="../js/charityAPI.js">
