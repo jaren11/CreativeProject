@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
-.results{
+.resultsIndividual{
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+  background-color: #ADD8E6;
+  box-shadow: 5px 5px 15px grey;
+}
+
+.resultsIndividual p{
+  text-align: center;
 }
 
 .otherimg{
@@ -23,7 +29,6 @@
 .results{
   height: 100%;
   width: 100%;
-  background-color: #ADD8E6;
 }
 
 .page {
@@ -141,6 +146,10 @@ html {margin-bottom: 55px}
 @media only screen and (max-width: 400px) {
   body {
     background-color: #F09A9D; /* Red */
+  }
+  .comment{
+    font-size: 3vw;
+    overflow: auto;
   }
 }
 
